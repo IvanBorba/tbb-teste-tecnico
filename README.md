@@ -16,7 +16,7 @@ Para rodar este projeto é necessário ter as seguintes tecnologias instaladas:
 
 ```bash
 #!/bin/bash
-$ git clone git@github.com:IvanBorba/tbb-test.git
+$ git clone git@github.com:IvanBorba/tbb-teste-tecnico.git
 ```
 
 - Acesse a pasta do projeto em seu terminal:

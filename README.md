@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Brooklyn Brothers - Teste Técnico
 
-## Getting Started
+Projeto realizado durante processo seletivo para o cargo de Desenvolvedor Front End na empresa The Brooklyn Brothers.
 
-First, run the development server:
+## Pré-requisitos
+
+Para rodar este projeto é necessário ter as seguintes tecnologias instaladas:
+
+- **Node** com versão superior ou igual que 8.1 - [Node Download](https://nodejs.org/pt-br/download/)
+- **NPM** com versão superior ou igual que 5.6 - [Npm Download](https://www.npmjs.com/package/download)
+- **Git** configurado para clonagem do projeto
+
+## Instalação
+
+- Clone esse projeto em seu computador com o comando:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+#!/bin/bash
+$ git clone git@github.com:IvanBorba/tbb-test.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Acesse a pasta do projeto em seu terminal:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+#!/bin/bash
+$ cd tbb-test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Já na pasta da aplicação, digite o seguinte comando para instalar as dependências:
 
-## Learn More
+```bash
+#!/bin/bash
+$ npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Execução
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Com as bibliotecas instaladas, insira o seguinte comando para rodar o projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+#!/bin/bash
+$ npm run dev
+```
 
-## Deploy on Vercel
+## Autores
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Ivan Gabriel de Borba - Desenvolvedor Full Stack - [Github](https://github.com/IvanBorba) | [Site](https://portfolio-ivanborba.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+- MIT License (MIT)
+
+## Agradecimentos
+
+Agradeço a The Brooklyn Brothers e sua equipe pela oportunidade de estar participando de seu processo seletivo, espero que gostem do código :wink:

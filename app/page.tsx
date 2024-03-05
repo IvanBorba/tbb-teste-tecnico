@@ -1,95 +1,126 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Banner, Footer, Header, VideoPlayer } from "./components";
+import "./styles.scss";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <main>
+      <Header />
+      <VideoPlayer />
+      <div className="section-title" id="gifting">
+        <h2>Gifting</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <section className="border-orange">
+        <Banner
+          imagePath="/assets/banner-1.png"
+          title="Toys perfect for birthday gift-giving season in Spring"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
         />
+        <Banner
+          imagePath="/assets/banner-2.png"
+          title="Gifts for Mom"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <div className="section-title" id="travel">
+        <h2>Travel</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <section className="border-green">
+        <Banner
+          imagePath="/assets/banner-3.png"
+          title="Travel the world no matter where you are. No Passport needed."
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+        />
+        <Banner
+          imagePath="/assets/banner-4.png"
+          title="Fun accessories to take with you on your travels or keep kids entertained"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <div className="section-title" id="adults">
+        <h2>Adults welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
+      <section className="border-blue">
+        <Banner
+          imagePath="/assets/banner-5.png"
+          title="For the Kids at Heart who love to unplug, unbox and unwind"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+        />
+      </section>
+      <div className="section-title" id="art">
+        <h2>Art & Home Décor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <section className="border-light-grey">
+        <Banner
+          imagePath="/assets/banner-6.png"
+          title="Playful ideas for refreshing your space while tapping into your more creative side"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <div className="section-title" id="space">
+        <h2>Space</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <section className="border-black">
+        <Banner
+          imagePath="/assets/banner-7.png"
+          title="Capture the wonders of space and exploration"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+        />
+      </section>
+      <div className="section-title" id="pop">
+        <h2>Pop Culture</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <section className="border-pink">
+        <Banner
+          imagePath="/assets/banner-8.png"
+          title="Recreate scenes from your favorite movies and TV series"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <div className="section-title" id="toddlers">
+        <h2>Toddlers</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <section className="border-yellow">
+        <Banner
+          imagePath="/assets/banner-9.png"
+          title="Waterproof toys for toddlers and beyond"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+        />
+        <Banner
+          imagePath="/assets/banner-10.png"
+          title="xx TBD"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <div className="section-title" id="playing">
+        <h2>Real World Role Playing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <section className="border-red">
+        <Banner
+          imagePath="/assets/banner-11.png"
+          title="Celebrating the everyday heroes"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+        />
+        <Banner
+          imagePath="/assets/banner-12.png"
+          title="xxxxx TBD"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque nulla vitae mi scelerisque vulputate. Aenean ultrices leo eget lacus maximus, vitae feugiat."
+          left
+        />
+      </section>
+      <Footer />
     </main>
   );
 }

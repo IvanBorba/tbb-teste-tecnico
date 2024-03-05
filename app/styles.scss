@@ -1,0 +1,119 @@
+@import "fonts";
+
+main {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button,
+  input,
+  span,
+  div {
+    font-family: "Cera Pro";
+  }
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 196px;
+    margin-bottom: 3px;
+    scroll-margin-top: 100px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 16px;
+      color: #525252;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 120px;
+  }
+
+  section:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .border-orange {
+    border-top: 1px solid #ee7500;
+    border-bottom: 1px solid #ee7500;
+  }
+  .border-green {
+    border-top: 1px solid #00963e;
+    border-bottom: 1px solid #00963e;
+  }
+  .border-blue {
+    border-top: 1px solid #006cb7;
+    border-bottom: 1px solid #006cb7;
+  }
+  .border-light-grey {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .border-black {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .border-pink {
+    border-top: 1px solid #fc36a5;
+    border-bottom: 1px solid #fc36a5;
+  }
+  .border-yellow {
+    border-top: 1px solid #ffd500;
+    border-bottom: 1px solid #ffd500;
+  }
+  .border-red {
+    border-top: 1px solid #e3000b;
+    border-bottom: 1px solid #e3000b;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .section-title {
+      padding: 0 80px;
+
+      h2 {
+        font-size: 28px;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 16px;
+        color: #525252;
+      }
+    }
+  }
+
+  @media screen and (max-width: 928px) {
+    .section-title {
+      position: relative;
+      padding: 0 16px;
+      height: 40px;
+
+      p {
+        position: absolute;
+        top: 120%;
+        text-align: right;
+        width: 90%;
+      }
+    }
+
+    section {
+      padding-bottom: 32px;
+      padding-top: 60px;
+    }
+  }
+}

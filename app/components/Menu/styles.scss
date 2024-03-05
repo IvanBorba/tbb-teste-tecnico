@@ -1,0 +1,242 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: white;
+  transition: height 0.3s ease;
+  z-index: 2;
+
+  &.open {
+    height: 100vh;
+  }
+
+  .menu-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    .menu-options {
+      width: 25%;
+
+      .logo-container {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+        padding-left: 9vw;
+
+        svg {
+          cursor: pointer;
+          margin: 12px;
+        }
+      }
+
+      .menu-icons {
+        .icon {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          height: 56px;
+          cursor: pointer;
+          padding-left: 9vw;
+          position: relative;
+
+          p {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 28px;
+            z-index: 5;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #bbdcf5;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: 0.3s ease;
+            z-index: 3;
+            opacity: 0;
+          }
+
+          &:hover::before {
+            width: 100%;
+            transform: scaleX(1);
+            opacity: 1;
+          }
+        }
+      }
+
+      .themes {
+        span {
+          display: flex;
+          align-items: center;
+          height: 48px;
+          margin-top: 64px;
+          margin-bottom: 24px;
+          user-select: none;
+          padding-left: 10vw;
+          position: relative;
+          padding: auto 0;
+
+          &::after {
+            content: "";
+            width: 9vw;
+            height: 1px;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 0.5px);
+          }
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          height: 48px;
+          margin-bottom: 4px;
+          cursor: pointer;
+          padding-left: 9vw;
+          position: relative;
+          z-index: 4;
+
+          p {
+            z-index: 5;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #bbdcf5;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: 0.3s ease;
+            z-index: 3;
+            opacity: 0;
+          }
+
+          &:hover::before {
+            width: 100%;
+            transform: scaleX(1);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .menu-categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 75%;
+
+      .category-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid #808080;
+        transition: 0.5s ease;
+
+        &:hover {
+          background: url("/assets/blue-lego-pattern.png") left / auto 100%
+              no-repeat,
+            #1fa7da;
+          transition: 0.5s ease;
+          overflow-x: hidden;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .menu-content {
+      flex-direction: column;
+      overflow: scroll;
+
+      .menu-options {
+        .logo-container {
+          padding: 16px 20px;
+          width: 100vw;
+          margin-bottom: 16px;
+        }
+
+        .menu-icons {
+          .icon {
+            padding-left: 20px;
+            min-width: 260px;
+
+            p {
+              font-size: 24px;
+            }
+
+            &:hover::before {
+              width: 0;
+            }
+          }
+        }
+
+        .themes {
+          span {
+            padding-left: 20px;
+            margin-top: 24px;
+            margin-bottom: 16px;
+
+            &::after {
+              width: 14px;
+            }
+          }
+
+          div {
+            padding-left: 20px;
+
+            p {
+              z-index: 5;
+              min-width: 260px;
+            }
+
+            &:hover::before {
+              width: 0;
+            }
+          }
+        }
+      }
+
+      .menu-categories {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .category-card {
+          width: 100%;
+          border: 0;
+          border-top: 1px solid #bbdcf5;
+          border-bottom: 1px solid #bbdcf5;
+          transition: 0.5s ease;
+
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}

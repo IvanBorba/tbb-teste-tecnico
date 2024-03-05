@@ -1,0 +1,25 @@
+footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  border-top: 1px solid #e0e0e0;
+  background-color: white;
+  box-sizing: content-box;
+  user-select: none;
+
+  p {
+    width: 567px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #808080;
+    padding: 0 32px;
+
+    @media screen and (max-width: 400px) {
+      padding: 0 12px;
+    }
+  }
+}
